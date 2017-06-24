@@ -3,17 +3,17 @@
 
 {% block content %}
 <h1>Sign In</h1>
-<from action="" method="post" name="login">
-    {{ form.hidden_tag() }}
+<form action="" method="post" name="login">
+    {{form.hidden_tag()}}
     <p>
-	Enter your Name:<br>
-	{{ form.name(size=80) }}<br>
+        Enter Name:<br>
+        {{form.name(size=80)}}<br>
     </p>
     <p>
-	Enter Password:<br>
-	{{ form.password }
+        Enter Password:<br>
+        {{ form.password }}
     </p>
-    <p>{{ form.remember_me }} Remember Me ??</p>
+    <p>{{form.remember_me}} Remember Me?</p>
     <p><input type="submit" value="Sign In"></p>
 </form>
 {% endblock %}
