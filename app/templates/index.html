@@ -1,0 +1,19 @@
+
+<html>
+    <head>
+	{% if title %}
+	<title>{{ title }} - lowlp86blog</title>
+        {% else %}
+	<title>Welcome to the Lowlp86 Blog</title>
+	{% endif %}
+    </head>
+    <body>
+	{% extends "base.html" %}
+	{% block content %}
+	<h1>Hi, {{ user.nickname }}!</h1>
+	{% for post in posts %}
+	<div><p>{{ post.author.nickname }} says: <b>{{ post.body }}</b></p></div>
+	{% endfor %}
+	{% endblock %}
+    </body>
+</html>
