@@ -1,0 +1,8 @@
+ * Running on http://0.0.0.0:9999/ (Press CTRL+C to quit)
+ * Restarting with stat
+ * Debugger is active!
+ * Debugger PIN: 186-880-344
+107.151.133.116 - - [24/Jun/2017 23:58:56] "GET / HTTP/1.1" 200 -
+107.151.133.116 - - [24/Jun/2017 23:59:06] "GET /index HTTP/1.1" 200 -
+107.151.133.116 - - [25/Jun/2017 00:02:03] "GET / HTTP/1.1" 200 -
+107.151.133.116 - - [25/Jun/2017 00:02:05] "GET /favicon.ico HTTP/1.1" 404 -
