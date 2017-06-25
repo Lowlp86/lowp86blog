@@ -6,3 +6,23 @@
 107.151.133.116 - - [24/Jun/2017 23:59:06] "GET /index HTTP/1.1" 200 -
 107.151.133.116 - - [25/Jun/2017 00:02:03] "GET / HTTP/1.1" 200 -
 107.151.133.116 - - [25/Jun/2017 00:02:05] "GET /favicon.ico HTTP/1.1" 404 -
+107.151.133.116 - - [25/Jun/2017 00:05:38] "GET / HTTP/1.1" 200 -
+107.151.133.116 - - [25/Jun/2017 00:05:43] "GET /index HTTP/1.1" 200 -
+107.151.133.116 - - [25/Jun/2017 00:06:35] "GET /index HTTP/1.1" 200 -
+123.151.42.61 - - [25/Jun/2017 01:41:38] "GET http://www.baidu.com/ HTTP/1.1" 200 -
+ * Detected change in '/root/flask/lowlp86blog/config.py', reloading
+ * Restarting with stat
+ * Debugger is active!
+ * Debugger PIN: 615-269-143
+ * Detected change in '/root/flask/lowlp86blog/app/__init__.py', reloading
+ * Restarting with stat
+/root/flask/lowlp86blog/app/__init__.py:2: ExtDeprecationWarning: Importing flask.ext.sqlalchemy is deprecated, use flask_sqlalchemy instead.
+  from flask.ext.sqlalchemy import SQLAlchemy
+/root/flask/local/lib/python2.7/site-packages/flask_sqlalchemy/__init__.py:839: FSADeprecationWarning: SQLALCHEMY_TRACK_MODIFICATIONS adds significant overhead and will be disabled by default in the future.  Set it to True or False to suppress this warning.
+  'SQLALCHEMY_TRACK_MODIFICATIONS adds significant overhead and '
+Traceback (most recent call last):
+  File "run.py", line 1, in <module>
+    from app import app
+  File "/root/flask/lowlp86blog/app/__init__.py", line 8, in <module>
+    from app import views, models
+ImportError: cannot import name models
